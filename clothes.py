@@ -10,3 +10,6 @@ class Clothes():
 
 	def change_price(price):
 		self.price = price
+
+	def to_list(self):
+		return [self.name, self.group, self.price, self.photo, self.link]
