@@ -27,7 +27,6 @@ with open('clothes.json', 'r', encoding="utf-8") as file:
 	clothes1 = json.load(file)
 	for item in clothes1:
 		clothes_items[item[1]].append(clothes.Clothes(item[0], item[1], item[2], item[3], item[4]))
-print('соска')
 
 
 def remove_repetitions_cart(cart):
@@ -55,7 +54,6 @@ def add_cart_user(user_id, product):
 def delete_cart_user(user_id, index_product):
 	with open('users_data.json', 'r', encoding="utf-8") as file: #чтение
 		cart = json.load(file)
-	print(index_product)
 	cart[str(user_id)].pop(index_product)
 	with open('users_data.json', 'w', encoding="utf-8") as file: #запись
 		json.dump(cart, file, indent=2, ensure_ascii=False)

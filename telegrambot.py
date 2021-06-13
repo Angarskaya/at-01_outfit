@@ -20,7 +20,6 @@ def send_welcome(message):
 def get_text_messages(message):
 	if message.text == 'Каталог🏬':
 		choose_gender(message)
-		#view_catalog(message)
 	if message.text == 'Корзина🛒':
 		view_item_cart(str(message.chat.id), 0)
 	if message.text == 'Мой бюджет💵':
